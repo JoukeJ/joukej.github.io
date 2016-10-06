@@ -1,0 +1,10 @@
+/vendor
+/node_modules
+/scripts/api.log
+.env
+.idea
+_ide_helper.php
+_ide_helper_models.php
+public/node_modules
+phpunit.phar
+

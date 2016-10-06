@@ -1,0 +1,43 @@
+body {
+  font-family: Arial;
+}
+a.button {
+  padding: 5% 5%;
+  border: none;
+  width: 90%;
+  text-align: center;
+  display: inline-block;
+  margin-bottom: 10px;
+  text-decoration: none;
+}
+a.button_edit {
+  background-color: #BB6622;
+  color: #FFFFFF;
+}
+a.button_success {
+  background-color: #009900;
+  color: #FFFFFF;
+}
+input[type='text'],
+textarea,
+select {
+  width: 100%;
+  max-width: 100%;
+}
+input[type='submit'] {
+  width: 100%;
+  padding: 5% 5%;
+  background-color: #009900;
+  margin-top: 20px;
+  color: #FFFFFF;
+}
+.form-row {
+  margin-bottom: 10px;
+}
+.alert.alert-danger {
+  color: #FF0000;
+}
+.alert.alert-danger ul {
+  margin: 20px 0px;
+  padding: 0px;
+}

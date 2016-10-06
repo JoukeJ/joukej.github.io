@@ -1,0 +1,1 @@
+@extends('asimov.layout.master')

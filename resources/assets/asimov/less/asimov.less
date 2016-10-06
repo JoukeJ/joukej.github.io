@@ -1,0 +1,73 @@
+@import '../material/less/app.less';
+
+
+@padding-card-body: 30px;
+
+html, body {
+  height: 100%;
+}
+
+.alert ul {
+  list-style: none;
+  padding: 0px;
+}
+
+.icon-large {
+  font-size: 40px;
+}
+
+.card > .card-body {
+  padding-left: @padding-card-body;
+  padding-bottom: 10px;
+}
+
+.card > .card-body > * {
+  width: calc(~"100% - " @padding-card-body);
+}
+
+#header{
+  background-color: #000000;
+}
+.header-inner {
+  .logo {
+    a.logo-link{
+      padding: 0;
+      img {
+        max-height: 38px;
+      }
+    }
+  }
+}
+
+body.login-content:before{
+  background: none;
+  height: 100%;
+}
+body.login-content{
+  background-color: #000000;
+}
+
+.login-logo{
+  text-align: center;
+  margin-bottom: 10px;
+  img{
+    display: inline;
+    width: 100%;
+    max-width: 500px;
+  }
+}
+
+.login-content .lc-block{
+  margin-top: 0;
+}
+
+#login-button{
+  background-color: #20b2aa;
+}
+
+.pagination>.active>a, .pagination>.active>a:focus, .pagination>.active>a:hover, .pagination>.active>span, .pagination>.active>span:focus, .pagination>.active>span:hover{
+  background-color: #20b2aa;
+}
+a,a:hover{
+  color: #20b2aa;
+}

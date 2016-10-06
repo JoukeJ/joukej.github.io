@@ -1,0 +1,19 @@
+{
+  "name": "asimov-frontend",
+  "version": "0.0.1",
+  "private": true,
+  "dependencies": {
+    "bootstrap": "~3.3.0",
+    "jquery": "~2.1.0",
+    "grunt": "~0.4.5",
+    "grunt-contrib-concat": "^0.5.1",
+    "grunt-contrib-cssmin": "^0.12.2",
+    "grunt-contrib-jshint": "~0.10.0",
+    "grunt-contrib-less": "^1.0.1",
+    "grunt-contrib-nodeunit": "~0.4.1",
+    "grunt-contrib-uglify": "^0.8.0",
+    "grunt-contrib-watch": "^0.6.1",
+    "grunt-csssplit": "^0.4.0",
+    "font-awesome": "4.3.0"
+  }
+}

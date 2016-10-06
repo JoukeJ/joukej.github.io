@@ -1,0 +1,14 @@
+#!/usr/bin/env bash
+
+changed_files="$(git diff-tree -r --name-only --no-commit-id HEAD@{1} HEAD)"
+ 
+run_if_changed() {
+	echo "$changed_files" | grep --quiet "$1" && eval "$2"
+}
+
+echo "--- Installing Composer Packages ---"
+run_if_changed composer.json "composer install"
+echo "--- Migrating ---"
+run_if_changed database/migrations "php artisan migrate"
+echo "--- Executing Grunt ---"
+run_if_changed resources "cd ./resources/assets/asimov/ && npm install && grunt && cd ../frontend/ && npm install && grunt"
